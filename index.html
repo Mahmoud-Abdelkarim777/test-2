@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <link rel="icon" type="image/svg+xml" href="./img/logo.svg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <!-- bootsrtap install -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- cdn fontawsome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- external css file  -->
+    <link rel="stylesheet" href="style.css">
+    <title>شركة ماني للمحاماة</title>
+</head>
+<body >
+    <!-- start header  -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container align-items-start align-items-lg-center mt-3  ">
+                <!-- Logo -->
+                <img src="./img/logo.svg" class="image1" width="80px" alt="foto">
+                <button class="navbar-toggler  p-1 menu-toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <img id="menu-icon" alt="menu icon">
+                </button>
+                <ul class="navbar-nav list">
+                    <li class="nav-item" style="order: 1;">
+                        <a class="nav-link active fw-bold" aria-current="page" href="#home" data-attr="home">الرئيسية</a>
+                    </li>
+                    <li class="nav-item" style="order: 2;">
+                        <a class="nav-link fw-bold" href="#about" data-attr="about">من نحن</a>
+                    </li>
+                    <li class="nav-item" style="order: 3;">
+                        <a class="nav-link fw-bold" href="#services" data-attr="services">الخدمات</a>
+                    </li>
+                    <li class="nav-item" style="order: 3;">
+                        <a class="nav-link fw-bold" href="#customs" data-attr="customers">العملاء</a>
+                    </li>
+                    <li class="nav-item" style="order: 4;">
+                        <a class="nav-link fw-bold" href="#contact" data-attr="contact">تواصل معنا</a>
+                    </li>
+                </ul>
+                <img src="./img/logo-md.svg" class="image2" alt="foto">
+                <div id="bot1" class="d-flex align-items -start justify-content-center gap-2">
+                    <div  class="btn-en-glish btn-g" data-attr="language-en"></div>
+                    <div  class="btn-ar-abic btn-g " data-attr="language-ar"></div>
+                    <img src="./img/Frame.png" class="global m-2 rounded" width="12px" alt="photo">
+                    <a href="https://wa.me/966502252450" target="_blank" id="talk-us" class="p-2 px-5 fw-bold rounded text-decoration-none" data-attr="talk-us">تحدث معنا</a>
+                </div>
+            </div>
+        </nav>
+        <!-- Offcanvas Sidebar -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel" data-attr="menu-title">القائمة</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold" aria-current="page" href="#home" data-attr="home">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#about" data-attr="about">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#services" data-attr="services">الخدمات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#customs" data-attr="customers">العملاء</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#contact" data-attr="contact">تواصل معنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://wa.me/966502252450" target="_blank" id="talk-us" class="p-2 px-5 fw-bold rounded text-decoration-none" data-attr="whatsapp">واتساب</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container d-flex justify-content-center flex-column align-items-center mt -4 w-100 txt">
+            <p id="home" class="text-center  p-2 pt-0 px-lg-5 m-0 fw-bold " data-attr="tagline">نقف بجانبك بخبرةٍ تعزز حقوقك والتزامٍ يحقق لك العدالة</p>
+            <a href="https://www.mani-law.com/" target="_blank" class="p-2 px-5 rounded text-decoration-none fw-bold" data-attr="browse-now">تصفح موقعنا الآن</a>
+        </div>
+    </header>
+    <!-- end header  -->
+    <!--start Who are we -->
+    <section id="about" class="who mt-5 mb-2 pb-4 ">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div id="imgs" class="col-12 col-md-5 col-lg-5 d-flex justify-content-center">
+                    <img id="dynamic-img" src="" class="p-3 w-100" alt="photo">
+                </div>
+                <div class="info-company col-12 col-md-7 col-lg-7 d-flex flex-column justify-content-between">
+                    <div>
+                        <h1 class=" m-0 pb-2 fw-bold" data-attr="about-title">من <span class="word-color">نحن</span></h1>
+                        <p class="line m-0 " data-attr="about-line"></p>
+                    </div>
+                    <p class="txt m-0 w-lg-75 pt-2 pb-0" data-attr="about-description">
+                        تأسســـت شركــــة "ماني للمحامــــاة" عام 1441 هـ بهـــدف تقــــديم خدمــــــــات
+                        قانونيــــــة متكاملـــــة تواكــــب التطــــــورات القانونيـــــــة المحليــــــة والدولية. على مدى
+                        السنــــوات الماضيــــة، استطــــاعت الشركـــةأن تبنـــي سمعـــة قوية كشـــريك
+                        موثــــوق للعمــلاء من مختلـــــف القطــــاعـــات..
+                    </p>
+                    <a class="" id="toggleBtn-1" data-attr="read-more"></a>
+                    <div class="show mt-3">
+                        <a href="./cv/profile company .pdf" download class="fw-bold p-2 px-5 rounded text-decoration-none" data-attr="view-profile">عرض ملف الشركة</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end Who are we -->
+    <!-- start services -->
+    <section id="services" class="service container mb-4 mt-5">
+        <div class="content" dir="auto">
+            <div class="px-0 container ">
+                <h1 class="fw-bold" data-attr="services-title">خدماتنا <span class="word-color" data-attr="services-highlight">القانونية</span></h1>
+                <p class="line"></p>
+            </div>
+            <div class="row mb-5 gap-3 align-items-center justify-content-between ">
+                <article class="d-flex justify-content-start border flex-column pb-2">
+                    <div>
+                        <img src="./img/m-03.svg" width="52px" alt="photo">
+                    </div>
+                    <div>
+                        <h6 class="mb-2 fw-bold" data-attr="service-1-title">التقاضي وتسوية المنازعات</h6>
+                        <p class="mb-2" data-attr="service-1-description">تقديم خدمات الترافع أمام المحاكم والهيئات القضائية، وحل النزاعات بين الأطـراف بطـرق قانونية تشمل التحكيم والوساطة.</p>
+                    </div>
+                    <div>
+                        <a href="https://maniksa.com/mani-law-firm/" target="_blank" class="  " data-attr="service-1-link">أعرف المزيد عن الخدمة </a>
+                    </div>
+                </article>
+                <article class="d-flex justify-content-start border flex-column pb-2">
+                    <div>
+                        <img src="./img/m-04.svg" width="52px" alt="photo">
+                    </div>
+                    <div>
+                        <h6 class="mb-2 fw-bold" data-attr="service-2-title">الشركات والاستثمار في المملكة</h6>
+                        <p class="mb-2" data-attr="service-2-description">تقديم المشورة القانونية لتأسيس الشركات المحليـة والدوليـة، ودعـم الاستثمـارات داخـل المملكـة بمـا يتـوافـق مـع القـوانيـن واللـوائــح.</p>
+                    </div>
+                    <div>
+                        <a href="https://maniksa.com/mani-law-firm/" target="_blank" class="  " data-attr="service-2-link">أعرف المزيد عن الخدمة </a>
+                    </div>
+                </article>
+                <article class="d-flex justify-content-start border flex-column pb-2 item-3">
+                    <div>
+                        <img src="./img/m-01.svg" width="52px" alt="photo">
+                    </div>
+                    <div>
+                        <h6 class="mb-2 fw-bold" data-attr="service-3-title">الاستشارات والدراسات القانونية</h6>
+                        <p class="mb-2" data-attr="service-3-description">توفير استشارات قانونية دقيقة، بالإضافة إلى إعــداد الـدراســات القـانـونيــة التـي تـدعـم اتخــاذ قـرارات قانونيـة صحيحـة.</p>
+                    </div>
+                    <div>
+                        <a href="https://maniksa.com/mani-law-firm/" target="_blank" class="  " data-attr="service-3-link">أعرف المزيد عن الخدمة </a>
+                    </div>
+                </article>
+                <article class="d-flex justify-content-start border flex-column pb-2">
+                    <div>
+                        <img src="./img/m-07.svg" width="52px" alt="photo">
+                    </div>
+                    <div>
+                        <h6 class="mb-2 fw-bold" data-attr="service-4-title">حماية حقوق الملكية الفكرية</h6>
+                        <p class="mb-2" data-attr="service-4-description">مساعدة العملاء في حماية حقوقهم المتعلقة بـالـمـلكــيــة الفكـــريـة، مـثـل تســجـيــل العــلامــــات التجـارية وبـراءات الاخـتراع.</p>
+                    </div>
+                    <div>
+                        <a href="https://maniksa.com/mani-law-firm/" target="_blank" class="  " data-attr="service-4-link">أعرف المزيد عن الخدمة </a>
+                    </div>
+                </article>
+                <article class="d-flex justify-content-start border flex-column pb-2 item-5">
+                    <div>
+                        <img src="./img/m-06.svg" width="52px" alt="photo">
+                    </div>
+                    <div>
+                        <h6 class="mb-2 fw-bold" data-attr="service-5-title">التمثيل القانوني والترافع</h6>
+                        <p class="mb-2" data-attr="service-5-description">تمثيل العملاء أمام المحاكـم في مختـلـف القضايا القانونية وتقديم الدفاع القانوني عـن حقوقهـم.</p>
+                    </div>
+                    <div>
+                        <a href="https://maniksa.com/mani-law-firm/" target="_blank" class="mt-4   " data-attr="service-5-link">أعرف المزيد عن الخدمة </a>
+                    </div>
+                </article>
+                <article class="d-flex justify-content-start border flex-column pb-2 item-3">
+                    <div>
+                        <img src="./img/m-05.svg" width="52px" alt="photo">
+                    </div>
+                    <div>
+                        <h6 class="mb-2 fw-bold" data-attr="service-6-title">العقارات والمقاولات وإدارة الأملاك</h6>
+                        <p class="mb-2" data-attr="service-6-description">قديم المشورة القانونية في صفقات العقارات والمقـاولات، بما في ذلك شراء وبيـع العقارات وتنفيـذ عقـود البنـاء والتطـوير.</p>
+                    </div>
+                    <div>
+                        <a href="https://maniksa.com/mani-law-firm/" target="_blank" class="  " data-attr="service-6-link">أعرف المزيد عن الخدمة </a>
+                    </div>
+                </article>
+            </div>
+            <div class="mt-4 swiper">
+                <swiper-container
+                    id="service-swiper"
+                    class="mySwiper"
+                    loop="true" 
+                    speed="2500"
+                    autoplay="true"
+                    autoplay-delay="0" 
+                    autoplay-disable-on-interaction="false"
+                    space-between="30"
+                    navigation="false"
+                    pagination="true"
+                    breakpoints='{
+                        "767": {
+                            "slidesPerView": 1
+                        },
+                        "992": {
+                            "slidesPerView": 3
+                        },
+                        "1200": {
+                            "slidesPerView": 4
+                        }
+                    }'
+                    
+                >
+                    <swiper-slide>
+                        <article class="d-flex justify-content-start border flex-column  p-2">
+                            <div>
+                                <img src="./img/m-03.svg" width="52px" alt="photo">
+                            </div>
+                            <div>
+                                <h6 class="fw-bold  " data-attr="swiper-service-1-title">التقاضي وتسوية المنازعات</h6>
+                                <p data-attr="swiper-service-1-description">تقديم خدمات الترافع أمام المحاكم والهيئات القضائية، وحل النزاعات بين الأطـراف بطـرق قانونية تشمل التحكيم والوساطة.</p>
+                            </div>
+                            <div>
+                                <a href="https://maniksa.com/mani-law-firm/" target="_blank" class="  " data-attr="swiper-service-1-link">أعرف المزيد عن الخدمة </a>
+                            </div>
+                        </article>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <article class="d-flex justify-content-start border flex-column  p-2">
+                            <div>
+                                <img src="./img/m-04.svg" width="52px" alt="photo">
+                            </div>
+                            <div>
+                                <h6 class="fw-bold  " data-attr="swiper-service-2-title">الشركات والاستثمار في المملكة</h6>
+                                <p data-attr="swiper-service-2-description">تقديم المشورة القانونية لتأسيس الشركات المحليـة والدوليـة، ودعـم الاستثمـارات داخـل المملكـة بمـا يتـوافـق مـع القـوانيـن واللـوائــح.</p>
+                            </div>
+                            <div>
+                                <a href="https://maniksa.com/mani-law-firm/" target="_blank" class="  " data-attr="swiper-service-2-link">أعرف المزيد عن الخدمة </a>
+                            </div>
+                        </article>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <article class="d-flex justify-content-start border flex-column  p-2">
+                            <div>
+                                <img src="./img/m-01.svg" width="52px" alt="photo">
+                            </div>
+                            <div>
+                                <h6 class="fw-bold  " data-attr="swiper-service-3-title">الاستشارات والدراسات القانونية</h6>
+                                <p data-attr="swiper-service-3-description">توفير استشارات قانونية دقيقة، بالإضافة إلى إعــداد الـدراســات القـانـونيــة التـي تـدعـم اتخــاذ قـرارات قانونيـة صحيحـة.</p>
+                            </div>
+                            <div>
+                                <a href="https://maniksa.com/mani-law-firm/" target="_blank" class="  " data-attr="swiper-service-3-link">أعرف المزيد عن الخدمة </a>
+                            </div>
+                        </article>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <article class="d-flex justify-content-start border flex-column  p-2">
+                            <div>
+                                <img src="./img/m-07.svg" width="52px" alt="photo">
+                            </div>
+                            <div>
+                                <h6 class="fw-bold  " data-attr="swiper-service-4-title">حماية حقوق الملكية الفكرية</h6>
+                                <p data-attr="swiper-service-4-description">مساعدة العملاء في حماية حقوقهم المتعلقة بـالـمـلكــيــة الفكـــريـة، مـثـل تســجـيــل العــلامــــات التجـارية وبـراءات الاخـتراع.</p>
+                            </div>
+                            <div>
+                                <a href="https://maniksa.com/mani-law-firm/" target="_blank" class="    " data-attr="swiper-service-4-link">أعرف المزيد عن الخدمة </a>
+                            </div>
+                        </article>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <article class="d-flex justify-content-start border flex-column  p-2">
+                            <div>
+                                <img src="./img/m-06.svg" width="52px" alt="photo">
+                            </div>
+                            <div>
+                                <h6 class="fw-bold  " data-attr="swiper-service-5-title">التمثيل القانوني والترافع</h6>
+                                <p data-attr="swiper-service-5-description">تمثيل العملاء أمام المحاكـم في مختـلـف القضايا القانونية وتقديم الدفاع القانوني عـن حقوقهـم.</p>
+                            </div>
+                            <div>
+                                <a href="https://maniksa.com/mani-law-firm/" target="_blank" class="  " data-attr="swiper-service-5-link">أعرف المزيد عن الخدمة </a>
+                            </div>
+                        </article>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <article class="d-flex justify-content-start border flex-column  p-2">
+                            <div>
+                                <img src="./img/m-05.svg" width="52px" alt="photo">
+                            </div>
+                            <div>
+                                <h6 class="fw-bold  " data-attr="swiper-service-6-title">العقارات والمقاولات وإدارة الأملاك</h6>
+                                <p data-attr="swiper-service-6-description">قديم المشورة القانونية في صفقات العقارات والمقـاولات، بما في ذلك شراء وبيـع العقارات وتنفيـذ عقـود البنـاء والتطـوير.</p>
+                            </div>
+                            <div>
+                                <a href="https://maniksa.com/mani-law-firm/" target="_blank" class="  " data-attr="swiper-service-6-link">أعرف المزيد عن الخدمة </a>
+                            </div>
+                        </article>
+                    </swiper-slide>
+                </swiper-container>
+            </div>
+            <div class="show d-flex justify-content-center align-items-center ">
+                <a href="https://maniksa.com/mani-law-firm/" target="_blank" class="text-decoration-none p-2 px-5 rounded" data-attr="view-all-services">عرض جميع الخدمات</a>
+            </div>
+        </div>
+    </section>
+    <!-- end services -->
+    <!-- start hero two  -->
+    <section class="hero-two p-md-4 py-4 rounded text-center" id="hero-two">
+        <div class="container">
+            <div class="d-flex justify-content-center align-items-center">
+                <div>
+                    <p class="fs-3 mb-4" data-attr="legal-support-message">احجز الآن لتلقي الدعم القانوني من فريقنا ذي الخبرة الواسعة، وتجنب المخاطر القانونية</p>
+                    <div class="animat ">
+                        <a class="p-2 px-4 rounded" id="btn-2" href="https://wa.me/966502252450" target="_blank" data-attr="book-consultation">احجز استشارتك الآن</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end hero two  -->
+    <!-- start partener success  -->
+    <section id="customs" class=" container my-5 ">
+        <div class="mx-2">
+            <h1 class="fw-bold" data-attr="partners-success-title">شركاء <span class="word-color">النجاح</span></h1>
+            <p class="line" data-attr=""></p>
+        </div>
+        <div class="mt-5">
+            <swiper-container
+                dir="rtl"
+                class="mySwiper" 
+                loop="true" 
+                speed="800" 
+                space-between="30"
+                autoplay="true"
+                autoplay-delay="0" 
+                autoplay-disable-on-interaction="false" 
+                slides-per-view="auto" 
+                free-mode="true" 
+                looped-slides="10" 
+                css-mode="false"
+                free-mode-momentum="false"  
+                breakpoints='{
+                    "360": {
+                        "slidesPerView": 5
+                    },
+                    "992": {
+                        "slidesPerView": 6
+                    },
+                    "1200": {
+                        "slidesPerView": 8
+                    }
+                }'
+            >
+                <swiper-slide>
+                    <div class="image-container d-flex justify-content-center align-items-center">
+                        <img src="./img/1-01.svg" width="80px" alt="Logo 1" >
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="image-container d-flex justify-content-center align-items-center">
+                        <img src="./img/1-02.svg" width="80px" alt="Logo 2" >
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="image-container d-flex justify-content-center align-items-center">
+                        <img src="./img/1-03.svg" width="80px" alt="Logo 3" >
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="image-container d-flex justify-content-center align-items-center">
+                        <img src="./img/1-04.svg" width="80px" alt="Logo 4" >
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="image-container d-flex justify-content-center align-items-center">
+                        <img src="./img/1-05.svg" width="80px" alt="Logo 5" >
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="image-container d-flex justify-content-center align-items-center">
+                        <img src="./img/1-06.svg" width="80px" alt="Logo 6" >
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="image-container d-flex justify-content-center align-items-center">
+                        <img src="./img/1-07.svg" width="80px" alt="Logo 7" >
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="image-container d-flex justify-content-center align-items-center">
+                        <img src="./img/1-08.svg" width="80px" alt="Logo 8" >
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="image-container d-flex justify-content-center align-items-center">
+                        <img src="./img/1-09.svg" width="80px" alt="Logo 9" >
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="image-container d-flex justify-content-center align-items-center">
+                        <img src="./img/1-10.svg" width="80px" alt="Logo 10" >
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="image-container d-flex justify-content-center align-items-center">
+                        <img src="./img/1-11.svg" width="80px" alt="Logo 11" >
+                    </div>
+                </swiper-slide>
+            </swiper-container>
+        </div>
+    </section>
+    <!-- end partener success  -->
+    <!-- start footer  -->
+    <footer id="contact" class="footer  pb-0 px-0 py-md-5 ">
+        <div class="container">
+            <div class="row  justify-content-between ">
+                <article class=" mb-md-0 mb-5">
+                    <div class="mb-4">
+                        <img src="./img/logo.svg" width="72px" alt="" data-attr="logo">
+                    </div>
+                    <div class="icons-conect d-flex flex-wrap flex- md-column gap-2">
+                        
+                            <a href="https://wa.me/966502252450" target="_blank"><img src="./img/Social Icons-1.svg" width="30px" class="mb-md-2 ms-1 mx-md-0  " alt="photo" data-attr="social-icon-1"></a>
+                            <a href="https://x.com/manilawsa" target="_blank"><img src="./img/Social Icons-2.svg" width="30px" class="mb-md-2 ms-1 mx-md-0  " alt="photo" data-attr="social-icon-2"></a>
+                            <a href="https://www.linkedin.com/company/mani-lawsa/?viewAsMember=true" target="_blank"><img src="./img/Social Icons-3.svg" width="30px" class="mb-md-2 ms-1 mx-md-0  " alt="photo" data-attr="social-icon-3"></a>
+                        
+                        
+                            <a href="https://www.facebook.com/mani.lawsa" target="_blank"><img src="./img/Social Icons-5.svg" width="30px" class=" ms-1 mx-md-0  " alt="photo" data-attr="social-icon-5"></a>
+                            <a href="https://www.instagram.com/manilawsa?igsh=MXI1MWR0bDhscHhueQ==" target="_blank"><img src="./img/Social Icons-7.svg" width="30px" class=" ms-1 mx-md-0  " alt="photo" data-attr="social-icon-7"></a>
+                            <a href="https://www.tiktok.com/@mani.lawsa" target="_blank"><img src="./img/Social Icons-4.svg" width="30px" class="" alt="photo" data-attr="social-icon-4"></a>
+                        
+                    </article>
+                    <article class="" id="quick-links">
+                        <h4 class="mb-4" data-attr="quick-links-title">روابط سريعة</h4>
+                        <div class="mb-4 d-flex flex-column gap-3 ">
+                            <a href="#home" class="text-decoration-none fw-bold mb-3" data-attr="link-home"><p class="mb-3">الرئيسية</p></a>
+                            <a href="#about" class="text-decoration-none fw-bold mb-3 " data-attr="link-about"><p class="mb-3">من نحن</p></a>
+                            <a href="#services" class="text-decoration-none fw-bold mb-3 " data-attr="link-services"><p class="mb-3">الخدمات</p></a>
+                            <a href="#customs" class="text-decoration-none fw-bold mb-3 " data-attr="link-customers"><p class="mb-3">العملاء</p></a>
+                            <a href="#contact" class="text-decoration-none fw-bold mb-3 " data-attr="link-contact"><p class="mb-0">تواصل معنا</p></a>
+                        </div>
+                    </article>
+                    <article class=" mb-md-0 mb-5">
+                        <h4 class="mb-4" data-attr="contact-info-title">معلومات الاتصال</h4>
+                        <div class="d-flex flex-column gap-3  ">
+                            <div class="d-flex justify-content-start align-items-center gap-3 mb-3">
+                                <img src="./img/location icon.png" alt="" data-attr="location-icon">
+                                <p class="m-0" data-attr="location-text">الـــــرياض - الخبــــــر - جــــــــدة</p>
+                            </div>
+                            <div class="d-flex justify-content-start align-items-center gap-3 mb-3">
+                                <img src="./img/phone icon.png" alt="" data-attr="phone-icon">
+                                <a href="https://wa.me/966502252450" class="text-decoration-none" target="_blank" data-attr="phone-link">
+                                    <p dir="ltr" class="m-0" data-attr="phone-text">+966 50 225 2450</p>
+                                </a>
+                            </div>
+                            <div class="d-flex justify-content-start align-items-center gap-3 mb-3">
+                                <img src="./img/email icon.png" alt="" data-attr="email-icon">
+                                <a href="mailto:manilaw@mani-law.com" target="_blank" class="text-decoration-none" >
+                                    <p class="m-0" data-attr="email-text">manilaw@mani-law.com</p>
+                                </a>
+                            </div>
+                            <div class="d-flex justify-content-start align-items-center gap-3 mb-3">
+                                <img src="./img/globe.png" alt="" data-attr="website-icon">
+                                <a href="https://www.mani-law.com/" target="_blank" class="text-decoration-none"><p class="m-0" data-attr="website-text">www.mani-law.com</p></a>
+                            </div>
+                        </div>
+                    </article>
+            </div>
+            <div class="w-100 d-flex justify-content-center    ">
+                    <div style="width: 100%; height: 1px; background-color: wheat;"></div>
+            </div>
+            <div class="w-100 d-flex justify-content-center">
+                    <div class="row txts align-items-center justify-content-between py-4" style="width: 100%;">
+                        <p id="copyright" class="txt-p mb-0 col-md-5 col-lg-5 p-0" data-attr="copyright">كل الحقوق محفوظة &copy; 2024</p>
+                        <p id="developedBy" class="txt-p mb-0 col-md-5 col-lg-5 p-0" >
+                            Developed by
+                            <a href="https://www.linkedin.com/company/brillianttrend/" target="_blank" class="text-decoration-none">
+                                    Brilliant Trend
+                            </a>
+                        </p>
+                    </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer  -->
+    <!-- bootsrtap bundle install -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <!-- external js file  -->
+    <script src="main.js"></script>
+
+</body>
+</html>
