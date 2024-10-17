@@ -39,6 +39,10 @@ header {
 }
 
 @media (max-width: 767.98px) {
+    header{
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
     header .navbar #menu-icon{
         width: 30px;
     }
@@ -70,7 +74,7 @@ header .navbar  .menu-toggle{
         align-items: start !important;
     }
     header .navbar .container #bot1 .btn-g{ 
-        margin-top: -5px !important;
+        margin-top: -3px !important;
     }
 }
 @media (max-width: 992px) {
@@ -222,6 +226,12 @@ nav a:hover {
     color: white;
 }
 /* start who are we  */
+@media (max-width: 768px) {
+    #about{
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+}
 .who{
     overflow: hidden;
     background-image: url(./img/who\ we\ are.png);
@@ -255,13 +265,21 @@ nav a:hover {
         left: 3%;
         bottom: -210px !important;
     }
-    .who .row .info-company  .txt{
+    .who .row .info-company .txt{
         width: 100% !important;
+        /* padding-left: 0.75rem; */
+        /* padding-right: 0.75rem; */
         /* text-align: justify; */
     }
 }
 /* end who are we  */
 /* start new service */
+@media (max-width: 768px) {
+    #services{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
 .service .content .row p{
     text-align: justify;
 }
@@ -337,6 +355,13 @@ nav a:hover {
 }
 /* end new service */
 /* start hero two */
+
+@media (max-width: 768px) {
+    #hero-two{
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+}
 .hero-two{
     background-image: url(./img/Background\ pattern.svg);
     background-size: cover;
@@ -350,6 +375,15 @@ nav a:hover {
     }
 }
 /* end hero two */
+/* start customs  */
+
+@media (max-width: 768px) {
+    #customs{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+/* end customs  */
 #btn-2{
     background-color: white;
     color: black;
@@ -361,52 +395,14 @@ nav a:hover {
     font-size: 16px;
     font-weight: bold;
 }
-#btn{
-    background-color: #322e76;
-    color: #ffffff;
-    text-decoration: none;
-}
-#btn:hover{
-    background-color: white;
-    color: #322e76;
-    font-size: 16px;
-    font-weight: bold;
-}
-.about-us, .services, .contact-us {
-    text-align: center;
-}
-.about-us .row .col-md-5{
-    background-color: #f8fcff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-.service-box {
-    background-color: #ecf0f1;
-    border-radius: 10px;
-    min-height: 37rem;
-    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-.service-boxx {
-    background-color: #ecf0f1;
-    border-radius: 10px;
-    min-height: 10rem;
-    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-@media (max-width: 767px) {
-    .service-box {
-        min-height: 27rem;
+/* start footer  */
+
+@media (max-width: 768px) {
+    #footer{
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
     }
 }
-/* Avoid this if you want original colors */
-.contact-us i {
-    color: #1E3050; /* This will override the original icon color */
-}
-.contact-us i:hover {
-    color: #322e76; /* This will override the original icon color */
-}
-/* start footer  */
 footer {
     background-image: url(./img/footer.svg);
     background-size: cover;
