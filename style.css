@@ -62,11 +62,6 @@ header .navbar .container #bot1{
 header .navbar .container #bot1 .btn-g{ 
     cursor: pointer;
 }
-/* header .navbar  .menu-toggle{ 
-    border-color: #EFF1FF;
-} */
-
-
 
 @media (max-width: 767px) {
 
