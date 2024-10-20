@@ -330,7 +330,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (storedLanguage === "ar") {
                 if (screenWidth >= 992) {
                     // الشاشات الكبيرة باللغة العربية
-                    article.style.height = "185px";
+                    article.style.height = "200px";
                 } else if (screenWidth >= 768 && screenWidth < 992) {
                     // الشاشات المتوسطة باللغة العربية
                     article.style.height = "180px";
@@ -338,7 +338,7 @@ document.addEventListener("DOMContentLoaded", () => {
             } else {
                 if (screenWidth >= 992) {
                     // الشاشات الكبيرة باللغة الإنجليزية
-                    article.style.height = "220px";
+                    article.style.height = "245px";
                 } else if (screenWidth >= 768 && screenWidth < 992) {
                     // الشاشات المتوسطة باللغة الإنجليزية
                     article.style.height = "180px";
@@ -361,6 +361,46 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    // احصل على اللغة المخزنة
+    let storedLanguage = localStorage.getItem("language") || "ar"; // اجعل اللغة الافتراضية "ar" إذا لم يتم تخزين أي لغة
+    
+    // حدد عنصر body
+    const bodyElement = document.querySelector("body");
+    
+    // تحديث كلاس body بناءً على اللغة
+    function updateLanguageClass() {
+        if (storedLanguage === "en") {
+            bodyElement.classList.add("en");  // إضافة كلاس 'en' إذا كانت اللغة إنجليزية
+            bodyElement.classList.remove("ar"); // إزالة كلاس 'ar' إذا كانت موجودة
+        } else {
+            bodyElement.classList.add("ar");  // إضافة كلاس 'ar' إذا كانت اللغة عربية
+            bodyElement.classList.remove("en"); // إزالة كلاس 'en' إذا كانت موجودة
+        }
+    }
+
+    // استدعاء الدالة لتطبيق التصميم بناءً على اللغة الحالية عند تحميل الصفحة
+    updateLanguageClass();
+
+    // التحديث عند تغيير اللغة
+    const languageSelectors = document.querySelectorAll(".btn-en-glish, .btn-ar-abic"); // استخدام querySelectorAll
+    languageSelectors.forEach(selector => {
+        selector.addEventListener("click", (event) => {
+            const language = event.target.dataset.attr === "language-en" ? "en" : "ar";
+            localStorage.setItem("language", language);
+            storedLanguage = language; // تحديث اللغة المخزنة
+            updateLanguageClass(); // تحديث الواجهة بعد تغيير اللغة
+        });
+    });
+});
+
+
 
 
 
@@ -424,6 +464,38 @@ document.addEventListener("DOMContentLoaded", () => {
 // direction of swiper 
 document.addEventListener("DOMContentLoaded", () => {
     const swiperEl = document.getElementById("service-swiper");
+
+    function dirSwiper() {
+        const storedLanguage = localStorage.getItem("language");
+        const direction = storedLanguage === "ar" ? "rtl" : "ltr";
+
+        const currentSlide = swiperEl.swiper?.activeIndex || 0;
+
+        swiperEl.setAttribute("dir", direction);
+
+        const parent = swiperEl.parentNode;
+        parent.removeChild(swiperEl);
+        parent.appendChild(swiperEl);
+
+        swiperEl.addEventListener('ready', () => {
+            swiperEl.swiper.slideTo(currentSlide);
+        });
+    }
+
+    dirSwiper();
+
+    const languageSelectors = document.querySelectorAll(".btn-en-glish, .btn-ar-abic, .btn-en, .btn-ar");
+    languageSelectors.forEach(selector => {
+        selector.addEventListener("click", (event) => {
+            const language = event.target.dataset.attr === "language-ar" ? "ar" : "en";
+            setLanguage(language);
+            localStorage.setItem("language", language);
+            dirSwiper();
+        });
+    });
+});
+document.addEventListener("DOMContentLoaded", () => {
+    const swiperEl = document.getElementById("customs-swiper");
 
     function dirSwiper() {
         const storedLanguage = localStorage.getItem("language");

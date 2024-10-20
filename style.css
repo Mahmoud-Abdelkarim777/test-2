@@ -62,6 +62,9 @@ header .navbar .container #bot1{
 header .navbar .container #bot1 .btn-g{ 
     cursor: pointer;
 }
+/* header .navbar .menu-toggle{ 
+    border-color: #EFF1FF;
+} */
 
 @media (max-width: 767px) {
 
@@ -115,10 +118,28 @@ header .navbar .container #bot1 #talk-us{
 
 @media (max-width: 767.98px) {
     header .txt {
-        height: 135.5px;
+        height: 17.6vh;
     }
 }
 
+/* الشاشات الصغيرة فقط (مثلاً أقل من 576px) */
+@media (max-width: 767px) {
+    /* عندما تكون اللغة إنجليزية */
+
+    body.en header .d-flex p {
+        width: 98%;
+        font-size: 14px ;
+    }
+
+    body.en header .txt {
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+    body.en .hero-two #btn-2 {
+        padding-right: 12px !important;
+        padding-left: 12px !important;
+    }
+}
 
 header .txt a{
     background-color: white;
@@ -178,7 +199,7 @@ header .txt a{
 /* sm screen */
 @media (max-width: 767px) {
     header{
-        height: 207px;
+        height: 29vh;
     }
     header .navbar .container #bot1 #talk-us{
         display: none;
@@ -189,7 +210,7 @@ header .txt a{
     header .d-flex p{
         color: white;
         font-size: 14px !important;
-        width: 80%;
+        width: 80% ;
         padding-left: 0!important;
         padding-right: 0!important;
     }
@@ -226,12 +247,16 @@ nav a:hover {
         padding-left: 0.75rem;
         padding-right: 0.75rem;
     }
+    /* .who{
+        height: 43.5vh;
+    } */
 }
 .who{
     overflow: hidden;
     background-image: url(./img/who\ we\ are.png);
     background-size: cover;
-    /* background-color: #EFF1FF; */
+    /* background-color: #3e54f5; */
+    /* height: 43.5vh; */
 }
 .who .position-absolute{
     left: 3%;
@@ -262,9 +287,6 @@ nav a:hover {
     }
     .who .row .info-company .txt{
         width: 100% !important;
-        /* padding-left: 0.75rem; */
-        /* padding-right: 0.75rem; */
-        /* text-align: justify; */
     }
 }
 /* end who are we  */
@@ -302,16 +324,14 @@ nav a:hover {
 }
 .service  article{
     font-size: 14px;
-    border-radius: 10px;
+    border-radius: 0.25rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease-in-out;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
 }
 .service  article:hover{
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-.service  article{
-    padding-left: 1rem;
-    padding-right: 1rem;
 }
 
 
@@ -367,6 +387,7 @@ nav a:hover {
 .hero-two{
     background-image: url(./img/Background\ pattern.svg);
     background-size: cover;
+    /* height: 100vh; */
 }
 .hero-two p{
     width: 706px;
@@ -390,6 +411,7 @@ nav a:hover {
     background-color: white;
     color: black;
     text-decoration: none;
+    /* padding-top: .65rem !important; */
 }
 #btn-2:hover{
     background-color: #322e76;
@@ -406,10 +428,20 @@ nav a:hover {
     }
 }
 footer {
-    background-image: url(./img/footer.svg);
+    background-image: url(./img/footerlg.svg);
     background-size: cover;
     color: #fff;
     padding: 20px;
+}
+@media (max-width: 767px) {
+    footer{
+        background-image: url(./img/footersm.svg);
+        background-size: cover;
+        color: #fff;
+    }
+    .footer .icons-conect{
+        width: 100%;
+    }
 }
 .footer .icons-conect{
     width: 125px;
@@ -423,10 +455,10 @@ footer {
     }
 }
 
-
 footer a {
     color: #ffffff;
 }
+
 .footer .row article{
     width: 30%;
 }
